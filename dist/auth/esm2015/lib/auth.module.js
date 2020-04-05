@@ -1,18 +1,15 @@
+import { __decorate } from "tslib";
 import { NgModule } from '@angular/core';
 import { AuthComponent } from './auth.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
-import * as i0 from "@angular/core";
-export class AuthModule {
-}
-AuthModule.ɵmod = i0.ɵɵdefineNgModule({ type: AuthModule });
-AuthModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AuthModule_Factory(t) { return new (t || AuthModule)(); }, imports: [[]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(AuthModule, { declarations: [AuthComponent, WrapperComponent], exports: [AuthComponent] }); })();
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(AuthModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [AuthComponent, WrapperComponent],
-                imports: [],
-                exports: [AuthComponent]
-            }]
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXV0aC5tb2R1bGUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9hdXRoLyIsInNvdXJjZXMiOlsibGliL2F1dGgubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLGFBQWEsRUFBRSxNQUFNLGtCQUFrQixDQUFDO0FBQ2pELE9BQU8sRUFBRSxnQkFBZ0IsRUFBRSxNQUFNLDZCQUE2QixDQUFDOztBQVUvRCxNQUFNLE9BQU8sVUFBVTs7OENBQVYsVUFBVTttR0FBVixVQUFVLGtCQUpaLEVBQ1I7d0ZBR1UsVUFBVSxtQkFMTixhQUFhLEVBQUUsZ0JBQWdCLGFBR3BDLGFBQWE7a0RBRVosVUFBVTtjQU50QixRQUFRO2VBQUM7Z0JBQ1IsWUFBWSxFQUFFLENBQUMsYUFBYSxFQUFFLGdCQUFnQixDQUFDO2dCQUMvQyxPQUFPLEVBQUUsRUFDUjtnQkFDRCxPQUFPLEVBQUUsQ0FBQyxhQUFhLENBQUM7YUFDekIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZ01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgQXV0aENvbXBvbmVudCB9IGZyb20gJy4vYXV0aC5jb21wb25lbnQnO1xuaW1wb3J0IHsgV3JhcHBlckNvbXBvbmVudCB9IGZyb20gJy4vd3JhcHBlci93cmFwcGVyLmNvbXBvbmVudCc7XG5cblxuXG5ATmdNb2R1bGUoe1xuICBkZWNsYXJhdGlvbnM6IFtBdXRoQ29tcG9uZW50LCBXcmFwcGVyQ29tcG9uZW50XSxcbiAgaW1wb3J0czogW1xuICBdLFxuICBleHBvcnRzOiBbQXV0aENvbXBvbmVudF1cbn0pXG5leHBvcnQgY2xhc3MgQXV0aE1vZHVsZSB7IH1cbiJdfQ==
+let AuthModule = class AuthModule {
+};
+AuthModule = __decorate([
+    NgModule({
+        declarations: [AuthComponent, WrapperComponent],
+        imports: [],
+        exports: [AuthComponent, WrapperComponent]
+    })
+], AuthModule);
+export { AuthModule };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXV0aC5tb2R1bGUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9hdXRoLyIsInNvdXJjZXMiOlsibGliL2F1dGgubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsUUFBUSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQ3pDLE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxrQkFBa0IsQ0FBQztBQUNqRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSw2QkFBNkIsQ0FBQztBQU8vRCxJQUFhLFVBQVUsR0FBdkIsTUFBYSxVQUFVO0NBQUksQ0FBQTtBQUFkLFVBQVU7SUFMdEIsUUFBUSxDQUFDO1FBQ1IsWUFBWSxFQUFFLENBQUMsYUFBYSxFQUFFLGdCQUFnQixDQUFDO1FBQy9DLE9BQU8sRUFBRSxFQUFFO1FBQ1gsT0FBTyxFQUFFLENBQUMsYUFBYSxFQUFFLGdCQUFnQixDQUFDO0tBQzNDLENBQUM7R0FDVyxVQUFVLENBQUk7U0FBZCxVQUFVIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTmdNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IEF1dGhDb21wb25lbnQgfSBmcm9tICcuL2F1dGguY29tcG9uZW50JztcbmltcG9ydCB7IFdyYXBwZXJDb21wb25lbnQgfSBmcm9tICcuL3dyYXBwZXIvd3JhcHBlci5jb21wb25lbnQnO1xuXG5ATmdNb2R1bGUoe1xuICBkZWNsYXJhdGlvbnM6IFtBdXRoQ29tcG9uZW50LCBXcmFwcGVyQ29tcG9uZW50XSxcbiAgaW1wb3J0czogW10sXG4gIGV4cG9ydHM6IFtBdXRoQ29tcG9uZW50LCBXcmFwcGVyQ29tcG9uZW50XVxufSlcbmV4cG9ydCBjbGFzcyBBdXRoTW9kdWxlIHsgfVxuIl19

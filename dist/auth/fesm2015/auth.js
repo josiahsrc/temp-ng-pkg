@@ -1,80 +1,55 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { __decorate } from 'tslib';
+import { ɵɵdefineInjectable, Injectable, Component, NgModule } from '@angular/core';
 
-class AuthService {
+let AuthService = class AuthService {
     constructor() {
     }
-}
-AuthService.ɵfac = function AuthService_Factory(t) { return new (t || AuthService)(); };
-AuthService.ɵprov = ɵɵdefineInjectable({ token: AuthService, factory: AuthService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(AuthService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return []; }, null); })();
+};
+AuthService.ɵprov = ɵɵdefineInjectable({ factory: function AuthService_Factory() { return new AuthService(); }, token: AuthService, providedIn: "root" });
+AuthService = __decorate([
+    Injectable({
+        providedIn: 'root'
+    })
+], AuthService);
 
-class AuthComponent {
-    constructor() {
-    }
+let AuthComponent = class AuthComponent {
+    constructor() { }
     ngOnInit() {
     }
-}
-AuthComponent.ɵfac = function AuthComponent_Factory(t) { return new (t || AuthComponent)(); };
-AuthComponent.ɵcmp = ɵɵdefineComponent({ type: AuthComponent, selectors: [["lib-auth"]], decls: 2, vars: 0, template: function AuthComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "p");
-        ɵɵtext(1, " auth works! ");
-        ɵɵelementEnd();
-    } }, encapsulation: 2 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(AuthComponent, [{
-        type: Component,
-        args: [{
-                selector: 'lib-auth',
-                template: `
+};
+AuthComponent = __decorate([
+    Component({
+        selector: 'lib-auth',
+        template: `
     <p>
       auth works!
     </p>
-  `,
-                styles: [],
-            }]
-    }], function () { return []; }, null); })();
+  `
+    })
+], AuthComponent);
 
-class WrapperComponent {
-    constructor() {
-    }
+let WrapperComponent = class WrapperComponent {
+    constructor() { }
     ngOnInit() {
     }
-}
-WrapperComponent.ɵfac = function WrapperComponent_Factory(t) { return new (t || WrapperComponent)(); };
-WrapperComponent.ɵcmp = ɵɵdefineComponent({ type: WrapperComponent, selectors: [["lib-wrapper"]], decls: 4, vars: 0, consts: [[1, "test"]], template: function WrapperComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "p");
-        ɵɵtext(1, "wrapper works!");
-        ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 0);
-        ɵɵtext(3, " hello\n");
-        ɵɵelementEnd();
-    } }, styles: [".test[_ngcontent-%COMP%]{background-color:red;height:50px;width:50px}"] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(WrapperComponent, [{
-        type: Component,
-        args: [{
-                selector: 'lib-wrapper',
-                templateUrl: './wrapper.component.html',
-                styleUrls: ['./wrapper.component.scss']
-            }]
-    }], function () { return []; }, null); })();
+};
+WrapperComponent = __decorate([
+    Component({
+        selector: 'lib-wrapper',
+        template: "<p>wrapper works!</p>\n\n<div class=\"test\">\n    hello\n</div>",
+        styles: [".test{background-color:red;height:50px;width:50px}"]
+    })
+], WrapperComponent);
 
-class AuthModule {
-}
-AuthModule.ɵmod = ɵɵdefineNgModule({ type: AuthModule });
-AuthModule.ɵinj = ɵɵdefineInjector({ factory: function AuthModule_Factory(t) { return new (t || AuthModule)(); }, imports: [[]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(AuthModule, { declarations: [AuthComponent, WrapperComponent], exports: [AuthComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(AuthModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [AuthComponent, WrapperComponent],
-                imports: [],
-                exports: [AuthComponent]
-            }]
-    }], null, null); })();
+let AuthModule = class AuthModule {
+};
+AuthModule = __decorate([
+    NgModule({
+        declarations: [AuthComponent, WrapperComponent],
+        imports: [],
+        exports: [AuthComponent, WrapperComponent]
+    })
+], AuthModule);
 
 /*
  * Public API Surface of auth
@@ -84,5 +59,5 @@ AuthModule.ɵinj = ɵɵdefineInjector({ factory: function AuthModule_Factory(t) 
  * Generated bundle index. Do not edit.
  */
 
-export { AuthComponent, AuthModule, AuthService };
+export { AuthComponent, AuthModule, AuthService, WrapperComponent as ɵa };
 //# sourceMappingURL=auth.js.map

@@ -1,5 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="auth" />
 export * from './public-api';
+export { WrapperComponent as ɵa } from './lib/wrapper/wrapper.component';
