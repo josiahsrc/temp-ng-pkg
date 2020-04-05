@@ -19,6 +19,14 @@
       "shared": [
         "dist/shared/shared",
         "dist/shared"
+      ],
+      "auth": [
+        "dist/auth/auth",
+        "dist/auth"
+      ],
+      "theme": [
+        "dist/theme/theme",
+        "dist/theme"
       ]
     }
   },
