@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
       shared works!
     </p>
   `,
-  styles: []
+  styles: [
+  ],
 })
 export class SharedComponent implements OnInit {
 
